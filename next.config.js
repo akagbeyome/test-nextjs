@@ -1,8 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  experimental: {
-    serverComponentsExternalPackages: ['@aws-amplify/adapter-nextjs']
-  }
+  serverExternalPackages: ['@aws-amplify/adapter-nextjs'],
+  outputFileTracingRoot: __dirname
 }
 
 module.exports = nextConfig
